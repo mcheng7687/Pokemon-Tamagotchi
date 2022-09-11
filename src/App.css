@@ -1,0 +1,116 @@
+@font-face {
+  font-family: Michroma-Regular;
+  src: url(../public/Michroma/Michroma-Regular.ttf);
+}
+
+body {
+  background-color: red;
+}
+
+form {
+  padding: 1rem;
+}
+
+label {
+  color:gold;
+}
+
+button {
+  background-color: gold;
+}
+
+.logo {
+  width: 25%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.side-to-side {
+  display: inline-block;
+  width: 50%;
+}
+
+.right {
+  text-align: right;
+}
+
+.Nav-Right {
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding-right: 20px;
+  color:lightblue;
+  font-weight: bolder;
+}
+
+.small-text {
+  font-size: small;
+}
+
+.curr-location {
+  color:mediumblue;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.form-inputs {
+  width:10rem;
+  height:2rem;
+  text-align: center;
+  margin: 10px;
+  color: blue;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.pokecard {
+  width: 20rem;
+  text-align: center;
+  font-family: Michroma-Regular;
+  font-weight: bolder;
+  font-size: larger;
+  margin: 5px;
+  border-radius: 25px;
+  border: 8px solid yellow;
+}
+
+.poke-button {
+  width:30%;
+  height: 40px;
+  font-size: medium;
+  font-weight: bold;
+  color:dodgerblue;
+  background-color:gold;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+#search-form {
+  display: flex;
+  width: 30rem;
+  height: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#add-form
+{
+  display: flex;
+  width: 20rem;
+  height: 2rem;
+  font-weight: bold;
+  padding: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  color:slateblue;
+  background-color:turquoise;
+}
