@@ -36,7 +36,7 @@ function ProfileForm() {
           return { ...u, ...trainer };
         });
 
-        navigate('/home');
+        navigate('/');
       });
     }
     else {

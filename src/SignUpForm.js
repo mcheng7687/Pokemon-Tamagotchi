@@ -37,7 +37,7 @@ function SignUpForm() {
         setUser(trainer);
         setFormData(INITIAL_STATE);
 
-        navigate('/home');
+        navigate('/');
       });
     }
     else

@@ -13,7 +13,7 @@ function NavBar() {
 
   return (
     <nav>
-      <Link className={`Nav-App ${isCurr("/home")}`} to="/home">
+      <Link className={`Nav-App ${isCurr("/")}`} to="/">
         <img src={PokemonLogo} alt="Pokemon-logo" className="logo" />
       </Link>
       <div className="side-to-side">

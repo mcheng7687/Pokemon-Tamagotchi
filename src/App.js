@@ -43,7 +43,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/pokemon/list" element={<PokemonList />} />
           {/* <Route path="/pokemon/:id" element={<VerifyUser childRoute={<PokemonDetail />} />} /> */}
           <Route path="/trainer/pokemon" element={<VerifyUser childRoute={<MyPokemon />} />} />
