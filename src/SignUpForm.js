@@ -55,14 +55,16 @@ function SignUpForm() {
   return (
     <form onSubmit={handleSubmit} className="center">
       <table className="center">
-        {prompts.map((p, idx) =>
-          <FillIn
-            key={idx}
-            descript={p}
-            formData={formData}
-            handleChange={handleChange}
-          />
-        )}
+        <tbody>
+          {prompts.map((p, idx) =>
+            <FillIn
+              key={idx}
+              descript={p}
+              formData={formData}
+              handleChange={handleChange}
+            />
+          )}
+        </tbody>
       </table>
       <button className="form-inputs">Sign Up</button>
     </form>

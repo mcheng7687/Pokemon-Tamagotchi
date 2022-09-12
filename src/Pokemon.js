@@ -21,6 +21,8 @@ class Pokemon {
   static async getAll() {
     const allPokemonList = await axios.get(`${backend_URL}/pokemon/get`);
 
+    console.log(backend_URL + 'pokemon/get');
+
     const data = allPokemonList.data;
     const new_list = [];
 
