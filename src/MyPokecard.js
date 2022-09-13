@@ -3,19 +3,23 @@ import { Card } from 'react-bootstrap';
 import Trainer from './Trainer';
 import { useUser } from './useUser';
 
-function MyPokecard({ p }) {
+function MyPokecard({ p, setPokemonList }) {
   const { user } = useUser();
 
-  const handleFeed = evt => {
+  const handleFeed = async (evt) => {
     evt.preventDefault();
 
-    Trainer.feedMyPokemon(user.id, p.trainerPokemonId);
+    await Trainer.feedMyPokemon(user.id, p.trainerPokemonId);
+    await Trainer.getMyPokemon(user.id)
+    .then(p => setPokemonList(p));
   }
 
-  const handleRelease = evt => {
+  const handleRelease = async(evt) => {
     evt.preventDefault();
 
-    Trainer.releaseMyPokemon(user.id, p.trainerPokemonId);
+    await Trainer.releaseMyPokemon(user.id, p.trainerPokemonId);
+    await Trainer.getMyPokemon(user.id)
+    .then(p => setPokemonList(p));
   }
 
   return (
