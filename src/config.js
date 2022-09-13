@@ -1,4 +1,4 @@
-const backend_URL = process.env.API_URL || 'http://localhost:3001';
+const backend_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
 
 const localStorageId = "pokemon-trainer";
 // For debounce search timer
