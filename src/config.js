@@ -1,4 +1,6 @@
-const backend_URL = process.env.NODE_ENV === "production" ? 'https://pokemon-tamagotchi-backend.herokuapp.com' : 'http://localhost:3001';
+const backend_URL = process.env.NODE_ENV !== "production" ? 'http://localhost:3001' : 'https://pokemon-tamagotchi-backend.herokuapp.com';
+
+console.log('***********************',process.env.NODE_ENV,'**********************')
 const localStorageId = "pokemon-trainer";
 // For debounce search timer
 const searchTimer = 1500;
