@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Pokemon client for Pokemon Tamagotchi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is for the client end to provide an interactive GUI from the Pokemon Tamagotchi server end. This web app utilizes React App with the libraries: react-bootstrap, react-router-dom, and react-slideshow-image.
+
+Download all the files and run this command in the project directory to install all dependencies.
+
+### `npm i`
+
 
 ## Available Scripts
 
